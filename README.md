@@ -10,13 +10,11 @@ This repository implements **Weight-Aware Meta Auxiliary Learning (WAMAL)**, a n
 
 ## Requirements
 - Python 3.8 or higher
-- PyTorch
-- NumPy
-- Additional dependencies listed in `requirements.txt`
+- Additional dependencies listed in `environment.yaml`
 
 Install the required dependencies using:
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yaml
 ```
 
 ## Usage
@@ -41,12 +39,6 @@ Datasets required for training and evaluation are **not included** in this repos
 - **Oxford-IIIT Pet**: Fine-grained classification of pet breeds.
 - **Food101**: Large-scale fine-grained food classification.
 - **CUB200**: Fine-grained bird species classification.
-
-## File Structure
-- `wamal/networks/`: Contains backbone architectures and WAMAL wrappers.
-- `wamal/train.py`: Script for training the model.
-- `wamal/evaluate.py`: Script for evaluating the model.
-- `wamal/utils/`: Utility functions for data preprocessing and training.
 
 ## Results
 WAMAL demonstrates significant improvements over standard Single-Task Learning (STL) and Meta Auxiliary Learning (MAXL) across various benchmarks. For example:
